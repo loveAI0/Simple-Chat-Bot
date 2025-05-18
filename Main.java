@@ -28,9 +28,10 @@
 
         Main.guessTheAge(rem3, rem5, rem7);
 
-
-
-        
+        // count number
+        System.out.println("Now I will prove to you that I can count to any number you want.");
+        int targetNum = input.nextInt();
+        Main.countNumber(targetNum);
     }
 
     public static void greeting(String botName, int birthYear){
@@ -46,5 +47,12 @@
     public static void guessTheAge(int rem3, int rem5, int rem7){
         int age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105;
         System.out.println(String.format("Your age is %d; that's a good time to start programming!", age));
+    }
+
+    public static void countNumber(int targetNum){
+        for(int i = 0; i <= targetNum; i++){
+            System.out.println(String.format("%d!", i));
+        }
+        System.out.println("Completed, have a nice day!");
     }
  }
